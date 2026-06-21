@@ -335,21 +335,20 @@ export const Dashboard: React.FC<DashboardProps> = ({ onNavigate }) => {
                 cy="48"
                 r={ringRadius}
                 fill="transparent"
-                stroke="#1E293B"
+                stroke="var(--color-slate-700)"
                 strokeWidth="7"
-                className="stroke-slate-900"
               />
               <circle
                 cx="48"
                 cy="48"
                 r={ringRadius}
                 fill="transparent"
-                stroke="#22C55E"
+                stroke="var(--color-green-500)"
                 strokeWidth="7"
                 strokeDasharray={ringCircumference}
                 strokeDashoffset={strokeDashoffset}
                 strokeLinecap="round"
-                className="transition-all duration-500 ease-out filter drop-shadow-[0_0_4px_rgba(34,197,94,0.3)]"
+                className="transition-all duration-500 ease-out filter drop-shadow-[0_0_4px_rgba(255,255,255,0.15)]"
               />
             </svg>
             <div className="absolute text-center">

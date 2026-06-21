@@ -4,21 +4,21 @@
   --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
   --font-heading: 'Syne', sans-serif;
 
-  /* Premium Nordic Obsidian Theme Colors */
-  --color-slate-950: #060608;
-  --color-slate-900: #0a0a0c;
-  --color-slate-850: #101014;
-  --color-slate-800: #141419;
-  --color-slate-750: #1a1a22;
-  --color-slate-700: #20202a;
-  --color-slate-600: #2c2c3a;
-  --color-slate-500: #49495c;
-  --color-slate-400: #85859e;
+  /* Stark Monochrome Black & White Palette */
+  --color-slate-950: #000000; /* Pure black page background */
+  --color-slate-900: #080808; /* Deep black panels */
+  --color-slate-850: #0e0e10;
+  --color-slate-800: #141416; /* Dark cards */
+  --color-slate-750: #1c1c1f;
+  --color-slate-700: #26262b; /* Borders */
+  --color-slate-600: #38383e;
+  --color-slate-500: #52525b;
+  --color-slate-400: #a1a1aa; /* Secondary muted text */
 
-  /* Magma Red/Coral Accent Color Override */
-  --color-green-500: #ff334b; /* Electric Magma Red */
-  --color-green-600: #e0253b; /* Hover state */
-  --color-green-400: #ff8c00; /* Magma Gold/Orange */
+  /* Stark White Accents */
+  --color-green-500: #ffffff; /* Active button background / highlights */
+  --color-green-600: #e5e5e5; /* Hover buttons */
+  --color-green-400: #d4d4d8; /* Sub-highlights */
 }
 
 @layer base {

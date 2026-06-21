@@ -1,0 +1,45 @@
+{
+  "short_name": "Apex",
+  "name": "Apex Personal Coach",
+  "description": "A premium, mobile-first workout tracker and progressive overload personal gym coach.",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0F172A",
+  "theme_color": "#22C55E",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["fitness", "sports", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Today's Workout",
+      "short_name": "Workout",
+      "url": "/?tab=workout",
+      "description": "Start or log today's training session"
+    },
+    {
+      "name": "View Progress",
+      "short_name": "Analytics",
+      "url": "/?tab=analytics",
+      "description": "Analyze your lifts and weight progress"
+    }
+  ]
+}

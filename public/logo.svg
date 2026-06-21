@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="500" height="500">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    
+    <!-- Accent Ring Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+    
+    <!-- Inner Metallic Core Gradient -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748B" />
+      <stop offset="50%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Rectangle Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Outer Glowing Accent Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#accentGrad)" stroke-width="8" filter="url(#greenGlow)" />
+
+  <!-- Inner Plate Body -->
+  <circle cx="256" cy="256" r="150" fill="url(#metalGrad)" stroke="#1E293B" stroke-width="4" />
+  
+  <!-- Outer Ridges of the Weight Plate -->
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#1E293B" stroke-width="2" stroke-dasharray="10, 8" opacity="0.4" />
+  <circle cx="256" cy="256" r="80" fill="none" stroke="#0F172A" stroke-dasharray="4, 4" opacity="0.3" />
+
+  <!-- Stylized Dumbbell / Barbell Center Bar -->
+  <rect x="236" y="160" width="40" height="192" rx="8" fill="url(#accentGrad)" filter="url(#greenGlow)" />
+  <rect x="246" y="145" width="20" height="222" rx="4" fill="#FFFFFF" opacity="0.8" />
+  
+  <!-- Barbell Collars -->
+  <rect x="226" y="190" width="60" height="15" rx="3" fill="#334155" stroke="#1E293B" stroke-width="2" />
+  <rect x="226" y="307" width="60" height="15" rx="3" fill="#334155" stroke="#1E293B" stroke-width="2" />
+
+  <!-- Lettering 'I' and 'L' integrated dynamically -->
+  <!-- Left Wing - Letter I -->
+  <path d="M 170 210 L 195 210 L 195 302 L 170 302 Z" fill="#F8FAFC" opacity="0.9" />
+  <path d="M 160 210 L 205 210 L 205 220 L 160 220 Z" fill="#F8FAFC" opacity="0.9" />
+  <path d="M 160 292 L 205 292 L 205 302 L 160 302 Z" fill="#F8FAFC" opacity="0.9" />
+
+  <!-- Right Wing - Letter L -->
+  <path d="M 315 210 L 335 210 L 335 282 L 360 282 L 360 302 L 315 302 Z" fill="#F8FAFC" opacity="0.9" />
+</svg>
